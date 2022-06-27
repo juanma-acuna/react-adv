@@ -17,7 +17,12 @@ const Navigation = () => {
             <ul>
               {routes.map(({ to, name }) => (
                 <li key={to}>
-                  <NavLink to={to}>{name}</NavLink>
+                  <NavLink
+                    to={to}
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
+                    {name}
+                  </NavLink>
                 </li>
               ))}
             </ul>
