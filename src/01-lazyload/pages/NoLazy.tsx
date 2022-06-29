@@ -1,5 +1,5 @@
 const NoLazy = () => {
-  return <div>NoLazy component</div>;
+  return <h1>NoLazyLoading component</h1>;
 };
 
 export default NoLazy;
